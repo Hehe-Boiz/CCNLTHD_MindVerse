@@ -2,3 +2,5 @@ django
 pymysql
 Pillow
 django-ckeditor
+djangorestframework
+drf-yasg

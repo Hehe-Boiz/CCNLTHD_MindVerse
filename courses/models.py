@@ -37,7 +37,7 @@ class Lesson(BaseModel):
     subject = models.CharField(max_length=255)
     content = RichTextField(null=False)
     image = models.ImageField(upload_to='lessons/%Y/%m', null=True)
-    lesson = models.ForeignKey(Course, on_delete=models.RESTRICT)
+    course = models.ForeignKey(Course, on_delete=models.RESTRICT)
 
 
     def __str__(self):
